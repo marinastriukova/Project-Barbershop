@@ -10,7 +10,7 @@ header {
     }
 }
 .menu-button {
-    display: inline-flex;
+    // display: inline-flex;
     margin: 0;
     margin-left: auto;
     padding: 0;
@@ -41,7 +41,7 @@ header {
 }
 
 .menu-container {
-    background-color: $main-3-color;
+    background-color: teal;
     text-align: center;
     
     @media screen and  (max-width: 767px) {
