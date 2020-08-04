@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: 84px 31px 84px 31px;
+  margin: 0px auto 0px auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    width: 768px;
+    padding: 100px 39px 100px 39px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 130px 55px 130px 55px;
+  }
+}
+
+header .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+header {
+  position: relative;
+  font-family: Open Sans;
+}
+
+.header-content {
+  display: flex;
+}
+.menu-button {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  background-color: #ffffff;
+  text-align: center;
+  outline: 1px solid black;
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    padding-top: 118px;
+    padding-bottom: 60px;
+    z-index: 1;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list {
+    margin-right: 144px;
+    margin-left: 40px;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-item:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+.nav-item a {
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    margin-left: 40px;
+    margin-right: 103px;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contacts-list {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    margin-left: 84px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .contacts-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.border {
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  padding: 12px 37px;
+}
+
+@media screen and (max-width: 767px) {
+  .social-list {
+    margin-left: 40px;
+    margin-right: 105px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-list {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-item {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    margin-top: 39px;
+  }
+}
+
+.line {
+  background-color: #303030;
+  width: 60px;
+  height: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: rotate(270deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  aside .social-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  aside .social-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.hero {
+  background-color: 0;
+}
+
+body {
+  background-color: red;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
