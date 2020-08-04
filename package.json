@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Project8-andriyd.github.io/parcel-project-template",
+  "homepage": "https://Sergijua06.github.io/parcel-project-template",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Project8-andriyd/parcel-project-template"
+    "url": "git+https://github.com/Sergijua06/parcel-project-template"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
