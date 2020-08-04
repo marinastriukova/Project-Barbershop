@@ -4,68 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
-  </head>
-  <body>
+    </head>
+    <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/example.html"></include>
-    <header>
-      <div class="container">
-          <div class="header-content">
-              <a href="#" class="logo">
-                  <picture>
-                      <source
-                          srcset="
-                                  ./images/logo/logo.webp 69w
-                                  ./images/logo/logo@2x.webp 138w"
-                          type="image/webp"
-                          sizes="69px" />
-                      <source
-                          srcset="./images/logo/logo.jpg 69w, 
-                                  ./images/logo/logo@2x.jpg 138w"
-                          sizes="69px" />
-                      
-                      <img src="./images/logo/logo.jpg" alt="Logo of the copany">
-                  </picture>
-              </a>
-              <button 
-              type="button" 
-              class="menu-button" 
-              aria-expanded="false"
-              aria-controls="menu-container"
-              data-menu-button>
-                  <svg 
-                      width="40"
-                      height="40" 
-                      aria-label="Переключатель мобильного меню" 
-                      >
-                          <use class="icon-close" href="./images/icons.svg#cross"></use>
-                          <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-                  </svg>
-              </button>
-              <nav class="menu-container" id="menu-container" data-menu>
-                  <ul class="nav-list">
-                      <li class="nav-item"><a href="#">О нас</a></li>
-                      <li class="nav-item"><a href="#">Услуги и цены</a></li>
-                      <li class="nav-item"><a href="#">Мастера</a></li>
-                      <li class="nav-item"><a href="#contacts">Контакты</a></li>
-                  </ul>
-                  <ul class="contacts-list">
-                      <li class="contacts-item"><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                      <li class="contacts-item border"><a href="#">ОНЛАЙН ЗАПИСЬ</a></li>
-                  </ul>
-                  <aside>
-                      <ul class="social-list">
-                          <li class="social-item"><span class="line"></span><a href="#"> Instagram</a></li>
-                          <li class="social-item"><a href="#">Youtube</a></li>
-                      </ul>
-                  </aside>
-              </nav>
-          </div>
+        <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <picture>
+                        <source
+                            srcset="
+                                    ./images/logo/logo.webp 69w
+                                    ./images/logo/logo@2x.webp 138w"
+                            type="image/webp"
+                            sizes="69px" />
+                        <source
+                            srcset="./images/logo/logo.jpg 69w, 
+                                    ./images/logo/logo@2x.jpg 138w"
+                            sizes="69px" />
+                        
+                        <img src="./images/logo/logo.jpg" alt="Logo of the copany">
+                    </picture>
+                </a>
+                <button 
+                type="button" 
+                class="menu-button" 
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+                    <svg 
+                        width="40"
+                        height="40" 
+                        aria-label="Переключатель мобильного меню" 
+                        >
+                            <use class="icon-close" href="./images/icons.svg#cross"></use>
+                            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
 
-      </div>
+                <nav class="menu-container" id="menu-container" data-menu>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#">О нас</a></li>
+                        <li class="nav-item"><a href="#">Услуги и цены</a></li>
+                        <li class="nav-item"><a href="#">Мастера</a></li>
+                        <li class="nav-item"><a href="#contacts">Контакты</a></li>
+                    </ul>
 
-  </header>
+                    <ul class="contacts-list">
+                        <li class="contacts-item"><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+                        <li class="contacts-item border"><a href="#">ОНЛАЙН ЗАПИСЬ</a></li>
+                    </ul>
+                    <ul>
+                        <li>Что-то</li>
+                        <li>Нечто</li>
+                        <li>Ещё Что-то</li>
+                    </ul>
+
+                    <aside>
+                        <ul class="social-list">
+                            <li class="social-item"><span class="line"></span><a href="#"> Instagram</a></li>
+                            <li class="social-item"><a href="#">Youtube</a></li>
+                        </ul>
+                    </aside>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-  </body>
+    </body>
 </html>
