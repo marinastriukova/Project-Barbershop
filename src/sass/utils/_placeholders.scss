@@ -1,0 +1,25 @@
+%title-name {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $main-2-color;
+    }
+
+%container {
+    padding: 84px 31px 84px 31px;
+    margin: 0px auto 0px auto;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 768px;
+        padding: 100px 39px 100px 39px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        width: 1280px;
+        padding: 130px 55px 130px 55px;
+    }
+}

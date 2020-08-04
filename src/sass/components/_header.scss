@@ -1,3 +1,5 @@
+// Стили для Блока "Header"
+
 header {
     position: relative;
     font-family: Open Sans;
@@ -41,8 +43,9 @@ header {
 }
 
 .menu-container {
-    background-color: teal;
+    background-color: #ffffff;
     text-align: center;
+    outline: 1px solid black;
     
     @media screen and  (max-width: 767px) {
         position: absolute;
