@@ -6,9 +6,16 @@
 // Стили для файла с примером HTML-фрагмента
 @import './example';
 @import './utils/basic';
-@import './utils/variables';
 @import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
 @import './utils/visually-hidden';
 @import './components/container';
 @import './components/header';
 @import './components/hero';
+@import './components/tech-skills';
+@import './components/prices-and-servises';
+@import './components/feautures';
+@import './components/team';
+@import './components/portfolio';
+@import './components/online-registration&footer';
