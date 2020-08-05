@@ -1,4 +1,6 @@
 // Стили для Блока "Hero"
 .hero {
-    background-color: green($color: #000000);
+    &-container {
+        margin-left: auto;
+    }
 }

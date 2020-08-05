@@ -326,7 +326,7 @@ header {
   }
 }
 
-.hero {
-  background-color: 0;
+.hero-container {
+  margin-left: auto;
 }
 /*# sourceMappingURL=main.css.map */
