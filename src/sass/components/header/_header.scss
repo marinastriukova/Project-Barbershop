@@ -1,22 +1,19 @@
-// // Стили для Блока "Header"
 
 // header {
 //     position: relative;
+//     z-index: 2;
 //     font-family: Open Sans;    
 // }
 // .header-content {
 //     display: flex;
 //     @media screen and (max-width: 767px) {
-//         // justify-content: space-between;
 //     }
 // }
 // .menu-button {
-//     // display: inline-flex;
 //     margin: 0;
 //     margin-left: auto;
 //     padding: 0;
 //     border: none;
-//     background-color: transparent;
 //     cursor: pointer;
 //     z-index: 2;
 
@@ -51,7 +48,6 @@
 //         display: none;
 //         top: 0;
 //         right: 0;
-//         // width: 100%;
 //         padding-top: 118px;
 //         padding-bottom: 60px;
 //         z-index: 1;
@@ -104,8 +100,6 @@
 //         margin-bottom: 64px;
 //     }
 //     @media screen and (min-width: 768px) and (max-width: 1279px)  {
-//         // padding-top: 21px;
-//         // padding-bottom: 21px;
 //         display: flex;
 //         flex-direction: column-reverse;
 //         align-items: center;
@@ -119,27 +113,10 @@
 //         align-items: center;
 //         margin-left: auto;
 //     }
-//     // @media screen and (max-width: 767px) {
-//     //     a {
-//     //         @include centeredflex;
-//     //     }
-//     // }
-//     // @media screen and (min-width: 768px) {
-//     //     a {
-//     //         @include flex;
-//     //     }
-//     // }
 // }
 
 // .contacts-item {
-//     // width: 100%;
-//     // @include flex;
-//     // padding-top: 32px;
-//     // padding-bottom: 32px; 
-
 //     @media screen and (min-width: 1280px) {
-//         // padding-top: 32px;
-//         // padding-bottom: 32px;
 //     }
 //     &:not(:last-child) {
 //         @media screen and (max-width: 767px) {
@@ -168,8 +145,6 @@
     
 //     @media screen and (min-width: 768px) {
 //         display: flex;
-//         // align-items: center;
-//         // justify-content: center;
 //     }
     
 // }
@@ -194,7 +169,6 @@
 //     background-color: #303030;
 //     width: 60px;
 //     height: 1px;
-//     // transform: rotate(90deg);
 // }
 
 // aside {
