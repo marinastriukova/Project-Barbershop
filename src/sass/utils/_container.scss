@@ -1,23 +1,21 @@
-
 .container {
-    padding: 84px 31px 84px 31px;
-    margin: 0px auto 0px auto;
+  padding: 84px 31px 84px 31px;
+  margin: 0px auto 0px auto;
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        width: 768px;
-        padding: 100px 39px 100px 39px;
-    }
-    
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        padding: 130px 55px 130px 55px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+    padding: 100px 39px 100px 39px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 130px 55px 130px 55px;
+  }
 }
 
 header {
-    .container {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
-

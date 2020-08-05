@@ -1,4 +1,5 @@
 <!-- Блок "Онлайн запись и Footer" -->
+<div class="downpage-flex">
 <div class="appointment-wrapper">
   <section class="online-appointment container">
     <h2 class="title-appointment">Онлайн-запись</h2>
@@ -25,22 +26,36 @@
     </form>
   </section>
 </div>
-<footer>
-  <h2>Контакты</h2>
-  <address>
-    <a class="address-link" href="https://goo.gl/maps/eZeJbiqzj9iB19fdA">ул. Васильковая, 7А, Киев, 08132</a>
+<div class="footer-wrapper">
+<footer class="footer container">
+  <h2 class="title-footer">Контакты</h2>
+  <div class="footer-tablet-flex">
+  <address class="address-footer">
+    <a class="address-link" href="https://goo.gl/maps/eZeJbiqzj9iB19fdA"><svg class="icon-footer" width="24" height="24">
+      <use href="./images/sprite.svg#icon-map-pin"></use>
+    </svg>ул. Васильковая, 7А, Киев, 08132</a>
     <br />
-    <a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a>
+    <a class="address-link" href="tel:+380991111111"><svg class="icon-footer" width="24" height="24">
+      <use href="./images/sprite.svg#icon-phone"></use>
+    </svg>+38 099 111 11 11</a>
     <br />
-    <a class="address-link" href="barbershop@emailcom">info@examplecom</a>
+    <a class="address-link" href="barbershop@emailcom"><svg class="icon-footer" width="24" height="24">
+      <use href="./images/sprite.svg#icon-mail"></use>
+    </svg>info@examplecom</a>
   </address>
   <div class="working-time">
-    <b>Время работы</b>
-    <p>Ежедневно с 9:00 до 22:00</p>
+    <b class="time-footer">Время работы</b>
+    <p class="hours-footer">Ежедневно с 9:00 до 22:00</p>
   </div>
-  <div class="copyright">
-    <p>Instagram</p>
-    <p>Youtube</p>
-    <p>&#169 Copyright 2020</p>
+  </div>
+</div>
+</div>
+  <div class="copyright container">
+    <p class="copyright-footer">&#169 Copyright 2020</p>
+    <div class="block-social-footer">
+    <p class="social-footer">Instagram</p>
+    <p class="social-footer">Youtube</p>
+    </div>
   </div>
 </footer>
+

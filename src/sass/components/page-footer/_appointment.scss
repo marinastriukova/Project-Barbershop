@@ -1,9 +1,12 @@
 .online-appointment {
-  background-color: $background-color;
+  @media screen and (min-width: 1280px) {
+    width: 600px;
+  }
 }
 
 .appointment-wrapper {
   background-color: $background-color;
+  width: 100%;
 }
 
 .title-appointment {
@@ -60,12 +63,8 @@
 .input-label-appointment {
   position: absolute;
   left: 0px;
+  @extend %small-text;
 
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: $footer-rgba;
 
   transition: transform $animation, color $animation;

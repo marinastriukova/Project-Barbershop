@@ -46,13 +46,21 @@ a {
   text-decoration: none;
 }
 
-.title-appointment {
+.title-appointment, .title-footer {
   font-family: Raleway;
   font-weight: bold;
   font-size: 42px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.05em;
+}
+
+.input-label-appointment, .time-footer {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -90,12 +98,15 @@ header .container {
   padding-bottom: 40px;
 }
 
-.online-appointment {
-  background-color: #191c26;
+@media screen and (min-width: 1280px) {
+  .online-appointment {
+    width: 600px;
+  }
 }
 
 .appointment-wrapper {
   background-color: #191c26;
+  width: 100%;
 }
 
 .title-appointment {
@@ -155,11 +166,6 @@ form > .input-appointment {
 .input-label-appointment {
   position: absolute;
   left: 0px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.37;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
   transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1), color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -197,5 +203,170 @@ form > .input-appointment {
   color: #ffffff;
   background-color: #ff6c00;
   border-color: #ff6c00;
+}
+
+@media screen and (min-width: 1280px) {
+  .downpage-flex {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    width: 600px;
+  }
+}
+
+.footer-wrapper {
+  background-color: #191c26;
+  background-image: url(../images/page-footer/bg-footer-mobile@x1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192px), screen and (min-resolution: 2dppx) {
+  .footer-wrapper .footer-wrapper {
+    background-image: url(../images/page-footer/bg-footer-mobile@x2.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer-wrapper {
+    background-image: url(../images/page-footer/bg-footer-tablet@x1.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192px), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+  .footer-wrapper .footer-wrapper {
+    background-image: url(../images/page-footer/bg-footer-tablet@x2.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-wrapper {
+    background-image: url(../images/page-footer/bg-footer-desktop@x1.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192px), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .footer-wrapper .footer-wrapper {
+    background-image: url(../images/page-footer/bg-footer-desktop@x2.png);
+  }
+}
+
+.title-footer {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-footer {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer-tablet-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.address-footer {
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .address-footer {
+    margin-bottom: 0;
+  }
+}
+
+.address-link,
+.hours-footer {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #9da4bd;
+  fill: #9da4bd;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  transition: color 550ms cubic-bezier(0.4, 0, 0.2, 1), fill 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.hours-footer:hover {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+.hours-footer:hover {
+  color: #9da4bd;
+  fill: #9da4bd;
+}
+
+.icon-footer {
+  margin-right: 16px;
+}
+
+.time-footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.time-footer::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.4);
+  margin-right: 20px;
+}
+
+.copyright {
+  display: flex;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  font-size: 11px;
+  line-height: 1.37;
+  letter-spacing: 0.2em;
+}
+
+.block-social-footer {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.block-social-footer::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 20px;
+}
+
+.social-footer {
+  color: black;
+}
+
+.social-footer:not(:last-child) {
+  margin-right: 40px;
+}
+
+.copyright-footer {
+  color: #555555;
+}
+
+@media screen and (max-width: 767px) {
+  .copyright-footer {
+    margin-top: 40px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
