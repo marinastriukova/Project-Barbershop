@@ -67,8 +67,12 @@
 .address-footer {
   margin-bottom: 44px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 70px;
   }
 }
 
@@ -76,7 +80,6 @@
 .hours-footer {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 20px;
   color: $on-dark-text-color;
   fill: $on-dark-text-color;
   font-style: normal;
@@ -90,6 +93,10 @@
     color: $main-2-color;
     fill: $main-2-color;
   }
+}
+
+.address-link:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .hours-footer:hover {

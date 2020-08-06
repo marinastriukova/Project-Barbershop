@@ -279,9 +279,15 @@ form > .input-appointment {
   margin-bottom: 44px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .address-footer {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .address-footer {
+    margin-bottom: 70px;
   }
 }
 
@@ -289,7 +295,6 @@ form > .input-appointment {
 .hours-footer {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 20px;
   color: #9da4bd;
   fill: #9da4bd;
   font-style: normal;
@@ -303,6 +308,10 @@ form > .input-appointment {
 .hours-footer:hover {
   color: #ffffff;
   fill: #ffffff;
+}
+
+.address-link:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .hours-footer:hover {
