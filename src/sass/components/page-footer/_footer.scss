@@ -22,9 +22,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192px),
     screen and (min-resolution: 2dppx) {
-    .footer-wrapper {
-      background-image: url(../images/page-footer/bg-footer-mobile@x2.png);
-    }
+    background-image: url(../images/page-footer/bg-footer-mobile@x2.png);
   }
   // фон для таблетки
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -33,9 +31,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192px),
       screen and (min-resolution: 2dppx) {
-      .footer-wrapper {
-        background-image: url(../images/page-footer/bg-footer-tablet@x2.png);
-      }
+      background-image: url(../images/page-footer/bg-footer-tablet@x2.png);
     }
   }
   // фон героя для компьютера
@@ -45,9 +41,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192px),
       screen and (min-resolution: 2dppx) {
-      .footer-wrapper {
-        background-image: url(../images/page-footer/bg-footer-desktop@x2.png);
-      }
+      background-image: url(../images/page-footer/bg-footer-desktop@x2.png);
     }
   }
 }
@@ -130,12 +124,18 @@
   font-size: 11px;
   line-height: 1.37;
   letter-spacing: 0.2em;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 .block-social-footer {
   display: flex;
   align-items: center;
   margin-left: auto;
+
   &::before {
     content: '';
     width: 60px;
@@ -150,6 +150,11 @@
   &:not(:last-child) {
     margin-right: 40px;
   }
+}
+
+.social-footer:hover {
+  color: $accent-color;
+  transition: color $animation;
 }
 
 .copyright-footer {
