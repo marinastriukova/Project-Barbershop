@@ -1,0 +1,87 @@
+.online-appointment {
+  @media screen and (min-width: 1280px) {
+    width: 600px;
+  }
+}
+
+.appointment-wrapper {
+  background-color: $background-color;
+  width: 100%;
+}
+
+.title-appointment {
+  @extend %title-name;
+  color: $main-2-color;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+
+.appointment-main-info {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.input-appointment {
+  position: relative;
+  display: block;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% - 108px);
+  }
+
+  form > & {
+    width: 100%;
+  }
+}
+
+.input-appointment:first-child {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
+.input-field-appointment {
+  width: 100%;
+  resize: none;
+  color: $on-dark-text-color;
+  background-color: $background-color;
+  border: 0;
+  border-bottom: 1px solid $footer-rgba;
+
+  transition: border-bottom $animation;
+
+  .input-appointment:focus-within > & {
+    outline: none;
+    border-bottom: 1px solid $main-2-color;
+  }
+}
+
+.input-label-appointment {
+  position: absolute;
+  left: 0px;
+  @extend %small-text;
+
+  color: $footer-rgba;
+
+  transition: transform $animation, color $animation;
+
+  .input-appointment:focus-within > &,
+  .input-field-appointment:not(:placeholder-shown) + & {
+    transform: translate(0, -25px);
+    color: $main-2-color;
+  }
+}
+
+.appointment-button {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.button-appointment {
+  @include button($background-color, $main-2-color);
+}
