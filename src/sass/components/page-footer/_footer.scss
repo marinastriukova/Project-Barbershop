@@ -1,13 +1,15 @@
 .downpage-flex {
   @media screen and (min-width: 1280px) {
     display: flex;
-    justify-content: center;
   }
 }
 
 .footer {
   @media screen and (min-width: 1280px) {
     width: 600px;
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 100px;
   }
 }
 
@@ -46,7 +48,7 @@
   }
 }
 
-.title-footer {
+.footer-title {
   @extend %title-name;
   color: $main-2-color;
 
@@ -64,7 +66,7 @@
   }
 }
 
-.address-footer {
+.footer-address {
   margin-bottom: 44px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -76,10 +78,9 @@
   }
 }
 
-.address-link,
-.hours-footer {
-  display: inline-flex;
-  align-items: center;
+.footer-address-link,
+.footer-hours {
+  @include flex;
   color: $on-dark-text-color;
   fill: $on-dark-text-color;
   font-style: normal;
@@ -95,23 +96,22 @@
   }
 }
 
-.address-link:not(:last-child) {
+.footer-address-link:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.hours-footer:hover {
+.footer-hours:hover {
   color: $on-dark-text-color;
   fill: $on-dark-text-color;
 }
 
-.icon-footer {
+.footer-icon {
   margin-right: 16px;
 }
 
-.time-footer {
+.footer-time {
   @extend %small-text;
-  display: flex;
-  align-items: center;
+  @include flex;
   margin-bottom: 20px;
   color: $main-2-color;
 
@@ -138,9 +138,8 @@
   }
 }
 
-.block-social-footer {
-  display: flex;
-  align-items: center;
+.footer-block-social {
+  @include flex;
   margin-left: auto;
 
   &::before {
@@ -152,19 +151,19 @@
   }
 }
 
-.social-footer {
+.footer-social {
   color: $main-1-color;
   &:not(:last-child) {
     margin-right: 40px;
   }
 }
 
-.social-footer:hover {
+.footer-social:hover {
   color: $accent-color;
   transition: color $animation;
 }
 
-.copyright-footer {
+.footer-copyright {
   color: $on-white-text-color;
   @media screen and (max-width: 767px) {
     margin-top: 40px;
