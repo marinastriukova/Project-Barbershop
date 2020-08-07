@@ -1,1 +1,130 @@
 // Стили для блока "Почему приходят именно к нам?"
+.features-container {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+}
+.features-box{
+  @media screen and (min-width: 1280px) {
+    margin-top: 25px;
+    max-width: 50%;
+  }
+}
+.features-line-box{
+  @include flex;
+}
+.features-line{
+  width: 60px;
+  height: 1px;
+  background-color: $on-white-title-color;
+  margin-right: 20px;
+}
+.features-title-first {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $on-white-title-color;
+}
+.features-title-second {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: $on-white-title-color;
+  padding-top: 20px;
+  @media screen and (min-width: 768px) {
+    padding-right: 260px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-right: 150px;
+  }
+}
+.features-text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: $on-white-text-color;
+  padding-top: 20px;
+  @media screen and (min-width: 768px) {
+    padding-right: 185px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-right: 100px;
+  }
+}
+.features-list {
+  @include centeredflex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 0px;
+  }
+  &-margin-right {
+    margin-right: 15px;
+    @media screen and (max-width: 471px) {
+      margin-right: 0px;
+    }
+  }
+  &-margin {
+    margin-top: 49px;
+    margin-left: 15px;
+    @media screen and (max-width: 471px) {
+      margin-left: 0px;
+    }
+  } 
+}
+.features-item {
+  background-color: $secondary-bg-color;
+  padding: 20px 30px;
+  text-align: center;
+  width: 190px;
+  height: 133px;
+  position: relative;
+  &-number {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $on-white-title-color;
+    &-plus{
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: $accent-color;
+      position: absolute;
+      top: 25px;
+    }
+   }
+  &-text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: $on-white-title-color;
+  }
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+}
