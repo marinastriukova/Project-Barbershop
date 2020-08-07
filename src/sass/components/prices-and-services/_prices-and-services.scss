@@ -1,1 +1,159 @@
-// Стили для Блока "Услуги и цены"
+.price-string {
+  @include flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.underline {
+  display: flex;
+
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 8px;
+
+  @media (min-width: 768px) {
+    margin-top: 13px;
+  }
+}
+
+.prices-slogan::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border: solid tomato;
+}
+
+.prices-icon-line {
+  height: 1px;
+  width: 60px;
+  background-color: $on-dark-text-color;
+  margin-right: 20px;
+}
+
+.slogan-container {
+  @include flex;
+  margin-bottom: 20px;
+}
+
+.icon-slogan {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $on-dark-rgba;
+}
+
+.prices-title {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: $main-2-color;
+  margin-bottom: 44px;
+  text-align: start;
+}
+
+.price-item {
+  min-width: max-content;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: $on-dark-text-color;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.prices-button {
+  @include button(transparent, $accent-color);
+}
+
+.prices-services {
+  max-width: 480px;
+  background-color: rgba(17, 19, 25, 1);
+  background-image: url(../images/prices-services/prices-services-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../images/prices-services/prices-services-mobile@2x.png);
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+    background-image: url(../images/prices-services/prices-services-tablet.png);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/prices-services/prices-services-tablet@2x.png);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+    background-image: url(../images/prices-services/prices-services-desktop.png);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/prices-services/prices-services-desktop@2x.png);
+    }
+  }
+}
+
+.price-list1 {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+
+  @media (min-width: 1280px) {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.price-list2 {
+  margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+
+  @media (min-width: 1280px) {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+}
+
+.price-list-container {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  @media (min-width: 1280px) {
+    background: none;
+    display: flex;
+    margin-bottom: 50px;
+  }
+}
