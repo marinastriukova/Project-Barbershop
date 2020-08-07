@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\prices-services\\prices-services-mobile.png":[["prices-services-mobile.2d3a8610.png","images/prices-services/prices-services-mobile.png"],"images/prices-services/prices-services-mobile.png"],"./..\\images\\prices-services\\prices-services-mobile@2x.png":[["prices-services-mobile@2x.e84999ec.png","images/prices-services/prices-services-mobile@2x.png"],"images/prices-services/prices-services-mobile@2x.png"],"./..\\images\\prices-services\\prices-services-tablet.png":[["prices-services-tablet.daf874a0.png","images/prices-services/prices-services-tablet.png"],"images/prices-services/prices-services-tablet.png"],"./..\\images\\prices-services\\prices-services-tablet@2x.png":[["prices-services-tablet@2x.9a972bdf.png","images/prices-services/prices-services-tablet@2x.png"],"images/prices-services/prices-services-tablet@2x.png"],"./..\\images\\prices-services\\prices-services-desktop.png":[["prices-services-desktop.7fa229e2.png","images/prices-services/prices-services-desktop.png"],"images/prices-services/prices-services-desktop.png"],"./..\\images\\prices-services\\prices-services-desktop@2x.png":[["prices-services-desktop@2x.4a844c0b.png","images/prices-services/prices-services-desktop@2x.png"],"images/prices-services/prices-services-desktop@2x.png"],"./..\\images\\sprite.svg":[["sprite.5ec50489.svg","images/sprite.svg"],"images/sprite.svg"],"./..\\images\\page-footer\\bg-footer-mobile@x1.png":[["bg-footer-mobile@x1.58ee71d0.png","images/page-footer/bg-footer-mobile@x1.png"],"images/page-footer/bg-footer-mobile@x1.png"],"./..\\images\\page-footer\\bg-footer-mobile@x2.png":[["bg-footer-mobile@x2.62d5401c.png","images/page-footer/bg-footer-mobile@x2.png"],"images/page-footer/bg-footer-mobile@x2.png"],"./..\\images\\page-footer\\bg-footer-tablet@x1.png":[["bg-footer-tablet@x1.44bdcd00.png","images/page-footer/bg-footer-tablet@x1.png"],"images/page-footer/bg-footer-tablet@x1.png"],"./..\\images\\page-footer\\bg-footer-tablet@x2.png":[["bg-footer-tablet@x2.18f60e7f.png","images/page-footer/bg-footer-tablet@x2.png"],"images/page-footer/bg-footer-tablet@x2.png"],"./..\\images\\page-footer\\bg-footer-desktop@x1.png":[["bg-footer-desktop@x1.496f5fa6.png","images/page-footer/bg-footer-desktop@x1.png"],"images/page-footer/bg-footer-desktop@x1.png"],"./..\\images\\page-footer\\bg-footer-desktop@x2.png":[["bg-footer-desktop@x2.6206f3ca.png","images/page-footer/bg-footer-desktop@x2.png"],"images/page-footer/bg-footer-desktop@x2.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52315" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65250" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
