@@ -1,5 +1,5 @@
 // Стили для блока "Почему приходят именно к нам?"
-.features-conteiner {
+.features-container {
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row-reverse;
@@ -21,7 +21,7 @@
   background-color: $on-white-title-color;
   margin-right: 20px;
 }
-.features-title-one {
+.features-title-first {
   font-family: $main-font;
   font-style: normal;
   font-weight: 600;
@@ -31,7 +31,7 @@
   text-transform: uppercase;
   color: $on-white-title-color;
 }
-.features-title-big {
+.features-title-second {
   font-family: $title-font;
   font-style: normal;
   font-weight: bold;
@@ -67,19 +67,25 @@
   @include centeredflex;
   flex-wrap: wrap;
   margin-top: 0;
-  
   @media screen and (min-width: 768px) {
     justify-content: flex-end;
   }
   @media screen and (min-width: 1280px) {
     padding-left: 0px;
   }
-}
-.features-margin-right {
-  margin-right: 15px;
-  @media screen and (max-width: 471px) {
-    margin-right: 0px;
+  &-margin-right {
+    margin-right: 15px;
+    @media screen and (max-width: 471px) {
+      margin-right: 0px;
+    }
   }
+  &-margin {
+    margin-top: 49px;
+    margin-left: 15px;
+    @media screen and (max-width: 471px) {
+      margin-left: 0px;
+    }
+  } 
 }
 .features-item {
   background-color: $secondary-bg-color;
@@ -122,13 +128,3 @@
     margin-top: 30px;
   }
 }
-.features-margin {
-  margin-top: 49px;
-  margin-left: 15px;
-  @media screen and (max-width: 471px) {
-    margin-left: 0px;
-  }
-}
-
-
-
