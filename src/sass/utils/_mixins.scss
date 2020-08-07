@@ -1,36 +1,36 @@
 @mixin centeredflex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @mixin flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 @mixin button($background-color, $color) {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.3;
-    text-align: center;
-    letter-spacing: 0.09em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.09em;
+  color: $color;
+  background-color: $background-color;
+
+  display: inline-block;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  padding: 12px 38px;
+  min-width: 160px;
+
+  transition: color $animation, border-color $animation,
+    background-color $animation;
+
+  &:hover,
+  &:focus {
     color: $main-2-color;
-    background-color: $background-color;
-
-    display: inline-block;
-    border: 1px solid $accent-color;
-    border-radius: 25px;
-    padding: 12px 38px;
-    min-width: 160px;
-
-    transition: color $animation, border-color $animation,
-        background-color $animation;
-
-    &:hover,
-    &:focus {
-        color: $main-2-color;
-        background-color: $accent-color;
-        border-color: $accent-color;
-    }
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
 }

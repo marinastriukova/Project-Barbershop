@@ -1,13 +1,15 @@
 .downpage-flex {
   @media screen and (min-width: 1280px) {
     display: flex;
-    justify-content: center;
   }
 }
 
 .footer {
   @media screen and (min-width: 1280px) {
     width: 600px;
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 100px;
   }
 }
 
@@ -78,8 +80,7 @@
 
 .footer-address-link,
 .footer-hours {
-  display: inline-flex;
-  align-items: center;
+  @include flex;
   color: $on-dark-text-color;
   fill: $on-dark-text-color;
   font-style: normal;
@@ -110,8 +111,7 @@
 
 .footer-time {
   @extend %small-text;
-  display: flex;
-  align-items: center;
+  @include flex;
   margin-bottom: 20px;
   color: $main-2-color;
 
@@ -139,8 +139,7 @@
 }
 
 .footer-block-social {
-  display: flex;
-  align-items: center;
+  @include flex;
   margin-left: auto;
 
   &::before {
