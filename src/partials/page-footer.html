@@ -1,61 +1,82 @@
 <!-- Блок "Онлайн запись и Footer" -->
 <div class="downpage-flex">
-<div class="appointment-wrapper">
-  <section class="online-appointment container">
-    <h2 class="title-appointment">Онлайн-запись</h2>
-    <form>
-      <div class="appointment-main-info">
-        <label class="input-appointment">
-          <input class="input-field-appointment" type="text" name="name" placeholder=" " />
-          <span class="input-label-appointment">Имя*</span>
+  <section class="appointment-wrapper">
+    <div class="online-appointment container">
+      <h2 class="appointment-title">Онлайн-запись</h2>
+      <form>
+        <div class="appointment-main-info">
+          <label class="appointment-input">
+            <input
+              class="appointment-input-field"
+              type="text"
+              name="name"
+              placeholder=" "
+            />
+            <span class="appointment-input-label">Имя*</span>
+          </label>
+          <label class="appointment-input">
+            <input
+              class="appointment-input-field"
+              type="tel"
+              name="phone"
+              placeholder=" "
+            />
+            <span class="appointment-input-label">Телефон*</span>
+          </label>
+        </div>
+        <label class="appointment-input">
+          <textarea
+            class="appointment-input-field"
+            name="comment"
+            cols="30"
+            rows="10"
+            placeholder=" "
+          ></textarea>
+          <span class="appointment-input-label">Сообщение</span>
         </label>
-        <label class="input-appointment">
-          <input class="input-field-appointment" type="tel" name="phone" placeholder=" " />
-          <span class="input-label-appointment">Телефон*</span>
-        </label>
-      </div>
-      <label class="input-appointment">
-        <textarea class="input-field-appointment" name="comment" cols="30" rows="10" placeholder=" "></textarea>
-        <span class="input-label-appointment">Сообщение</span>
-      </label>
-      <div class="appointment-button">
-        <button type="submit" class="button-appointment">
-          <span class="appointment">Отправить</span>
+        <button type="submit" class="appointment-button">
+          <span>Отправить</span>
         </button>
+      </form>
+    </div>
+  </section>
+  <section class="footer-wrapper">
+    <div class="footer container">
+      <h2 class="footer-title">Контакты</h2>
+      <div class="footer-tablet-flex">
+        <address class="footer-address">
+          <a
+            class="footer-address-link"
+            href="https://goo.gl/maps/eZeJbiqzj9iB19fdA"
+            ><svg class="footer-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-map-pin"></use></svg
+            >ул. Васильковая, 7А, Киев, 08132</a
+          >
+          <br />
+          <a class="footer-address-link" href="tel:+380991111111"
+            ><svg class="footer-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-phone"></use></svg
+            >+38 099 111 11 11</a
+          >
+          <br />
+          <a class="footer-address-link" href="barbershop@emailcom"
+            ><svg class="footer-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-mail"></use></svg
+            >info@example.com</a
+          >
+        </address>
+        <div class="working-time">
+          <b class="footer-time">Время работы</b>
+          <p class="footer-hours">Ежедневно с 9:00 до 22:00</p>
+        </div>
       </div>
-    </form>
+    </div>
   </section>
 </div>
-<div class="footer-wrapper">
-<footer class="footer container">
-  <h2 class="title-footer">Контакты</h2>
-  <div class="footer-tablet-flex">
-  <address class="address-footer">
-    <a class="address-link" href="https://goo.gl/maps/eZeJbiqzj9iB19fdA"><svg class="icon-footer" width="24" height="24">
-      <use href="./images/sprite.svg#icon-map-pin"></use>
-    </svg>ул. Васильковая, 7А, Киев, 08132</a>
-    <br />
-    <a class="address-link" href="tel:+380991111111"><svg class="icon-footer" width="24" height="24">
-      <use href="./images/sprite.svg#icon-phone"></use>
-    </svg>+38 099 111 11 11</a>
-    <br />
-    <a class="address-link" href="barbershop@emailcom"><svg class="icon-footer" width="24" height="24">
-      <use href="./images/sprite.svg#icon-mail"></use>
-    </svg>info@examplecom</a>
-  </address>
-  <div class="working-time">
-    <b class="time-footer">Время работы</b>
-    <p class="hours-footer">Ежедневно с 9:00 до 22:00</p>
-  </div>
-  </div>
-</div>
-</div>
-  <div class="copyright container">
-    <p class="copyright-footer">&#169 Copyright 2020</p>
-    <div class="block-social-footer">
-      <a class="social-footer" href="">Instagram</a>
-      <a class="social-footer" href="">Youtube</a>
-    </div>
+<footer class="copyright container">
+  <p class="footer-copyright">&#169; Copyright 2020</p>
+  <div class="footer-block-social">
+    <a class="footer-social" href="">Instagram</a>
+    <a class="footer-social" href="">Youtube</a>
   </div>
 </footer>
-
