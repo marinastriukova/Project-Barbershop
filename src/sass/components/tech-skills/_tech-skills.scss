@@ -1,0 +1,180 @@
+// Стили для Блока "О нас"
+.tech-skills-container {
+  /*padding: 84px 31px 84px 31px;*/
+  margin: 0px auto 0px auto;
+  display: flex;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+    padding: 100px 39px 100px 39px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 130px 55px 130px 55px;
+  }
+}
+.tech-skills-text-container {
+  @media screen and (max-width: 767px) {
+    padding: 84px 31px 84px 31px;
+    margin: 0px auto 0px auto;
+  }
+}
+
+.tech-skills-list {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: block;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+.tech-skills-title {
+  width: 330px;
+
+  padding-bottom: 20px;
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+
+  color: $on-white-title-color;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+    font-size: 42px;
+    line-height: 49px;
+    margin-left: 64px;
+  }
+}
+.tech-skills-text {
+  position: relative;
+  margin-left: 31px;
+  padding-left: 52px;
+  padding-bottom: 20px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $on-white-title-color;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 94px;
+  }
+}
+.tech-skills-text::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  top: -65%;
+  left: 0;
+  background: $on-white-title-color;
+  transform: rotate(90deg);
+}
+.tech-skills-text1 {
+  width: 418px;
+  padding-bottom: 20px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $on-white-text-color;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 330px;
+
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+    font-size: 18px;
+    line-height: 30px;
+    min-height: 60px;
+    margin-left: 64px;
+  }
+}
+.tech-skills-text2 {
+  width: 418px;
+  padding-bottom: 40px;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+
+  color: $on-white-text-color;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 330px;
+
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+    min-height: 128px;
+    margin-left: 64px;
+  }
+}
+.tech-skills-item {
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 30px;
+    }
+  }
+}
+.tech-skills-button {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.09em;
+  color: $main-1-color;
+  background-color: $main-2-color;
+
+  display: inline-block;
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  padding: 12px 38px;
+  min-width: 160px;
+
+  transition: color $animation, border-color $animation,
+    background-color $animation;
+
+  &:hover,
+  &:focus {
+    color: $main-2-color;
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 64px;
+  }
+}

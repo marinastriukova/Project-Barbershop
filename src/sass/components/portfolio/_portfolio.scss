@@ -1,0 +1,66 @@
+.barba-title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 44px;
+  margin-left: 80px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 21px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #303030;
+
+  @media screen and (min-width: 768px) {
+    line-height: 15px;
+  }
+}
+
+.barba-title::before {
+  content: ' ';
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 20px;
+
+  left: -80px;
+  top: 7px;
+  @media screen and (max-width: 767px) {
+    top: 10px;
+  }
+}
+
+.portfolio-list {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  & .portfolio-item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  & .portfolio-item {
+    align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+  }
+
+  & .portfolio-item:not(:last-child) {
+    @media screen and (min-width: 1280px) {
+      margin-right: 30px;
+    }
+  }
+}

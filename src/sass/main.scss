@@ -5,17 +5,18 @@
 
 // Стили для файла с примером HTML-фрагмента
 // @import './example';
-@import './utils/basic';
 @import './utils/variables';
+@import './utils/basic';
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './utils/visually-hidden';
 @import './utils/container';
-@import './components/header';
-@import './components/hero';
-@import './components/tech-skills';
-@import './components/prices-and-services';
-@import './components/feautures';
-@import './components/team';
-@import './components/portfolio';
-@import './components/online-registration&footer';
+@import './components/header/header';
+@import './components/header/hero';
+@import './components/tech-skills/tech-skills';
+@import './components/prices-and-services/prices-and-services';
+@import './components/features/features';
+@import './components/team/team';
+@import './components/portfolio/portfolio';
+@import './components/page-footer/appointment';
+@import './components/page-footer/footer';
