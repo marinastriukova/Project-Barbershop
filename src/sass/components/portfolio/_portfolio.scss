@@ -1,26 +1,10 @@
 .barba-title {
-  // position: relative;
   @include flex;
   margin-top: 0;
   margin-bottom: 44px;
-  // margin-left: 80px;
 
   @extend %small-text;
   color: $on-white-title-color;
-  // font-family: Open Sans;
-  // font-style: normal;
-  // font-weight: 600;
-  // font-size: 11px;
-  // line-height: 21px;
-
-  // letter-spacing: 0.1em;
-  // text-transform: uppercase;
-
-  // color: #303030;
-
-  // @media screen and (min-width: 768px) {
-  //   line-height: 15px;
-  // }
 
   &::before {
     @extend %before;

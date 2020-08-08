@@ -24,19 +24,19 @@
 }
 
 .prices-slogan {
+  @include flex;
   @extend %small-text;
-  display: flex;
-  align-items: center;
+
   color: $on-dark-rgba;
   margin-bottom: 20px;
 
   &::before {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 60px;
+    @extend %before;
     background-color: $on-dark-text-color;
-    margin-right: 20px;
+    margin-bottom: 13px;
+    @media screen and (min-width: 485px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -76,7 +76,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url(../images/prices-services/prices-services-mobile@2x.png);
-    background-size: contain;
+    background-size: cover;
   }
 
   @media (min-width: 768px) {
