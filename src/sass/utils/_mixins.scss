@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-@mixin button($background-color, $color) {
+@mixin button($background-color, $main-1-color) {
   text-decoration: none;
   font-family: $main-font;
   font-weight: 600;
@@ -17,7 +17,7 @@
   text-align: center;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: $color;
+  color: $main-1-color;
   background-color: $background-color;
 
   display: inline-block;
