@@ -109,11 +109,5 @@
   }
 }
 .tech-skills-button {
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-left: 30px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-left: 64px;
-  }
   @include button($main-2-color, $main-1-color);
 }
