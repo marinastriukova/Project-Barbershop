@@ -1,17 +1,13 @@
 .price-string {
   @include flex;
-  justify-content: space-between;
-
   &:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 
 .underline {
-  display: flex;
-
   height: 1px;
-  background-color: rgba(157, 164, 189, 0.12);
+  background-color: $on-dark-rgba;
   width: 100%;
   margin-left: 5px;
   margin-right: 5px;
@@ -22,44 +18,30 @@
   }
 }
 
-.prices-slogan::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  border: solid tomato;
-}
-
-.prices-icon-line {
-  height: 1px;
-  width: 60px;
-  background-color: $on-dark-text-color;
-  margin-right: 20px;
-}
-
 .slogan-container {
   @include flex;
   margin-bottom: 20px;
 }
 
-.icon-slogan {
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.prices-slogan {
+  @extend %small-text;
+  display: flex;
+  align-items: center;
   color: $on-dark-rgba;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: $on-dark-text-color;
+    margin-right: 20px;
+  }
 }
 
 .prices-title {
-  font-family: $title-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
+  @extend %title-name;
   color: $main-2-color;
   margin-bottom: 44px;
   text-align: start;
@@ -81,23 +63,23 @@
 }
 
 .prices-button {
-  @include button(transparent, $accent-color);
+  @include button(transparent, $main-2-color);
 }
 
 .prices-services {
-  max-width: 480px;
-  background-color: rgba(17, 19, 25, 1);
+  background-color: $background-color;
   background-image: url(../images/prices-services/prices-services-mobile.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   text-align: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url(../images/prices-services/prices-services-mobile@2x.png);
+    background-size: contain;
   }
 
   @media (min-width: 768px) {
-    max-width: 768px;
     background-image: url(../images/prices-services/prices-services-tablet.png);
 
     @media (min-resolution: 2dppx) {
@@ -106,9 +88,7 @@
   }
 
   @media (min-width: 1280px) {
-    max-width: 1280px;
     background-image: url(../images/prices-services/prices-services-desktop.png);
-
     @media (min-resolution: 2dppx) {
       background-image: url(../images/prices-services/prices-services-desktop@2x.png);
     }

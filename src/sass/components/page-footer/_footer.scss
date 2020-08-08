@@ -36,7 +36,7 @@
       background-image: url(../images/page-footer/bg-footer-tablet@x2.png);
     }
   }
-  // фон героя для компьютера
+  // фон для компьютера
   @media screen and (min-width: 1280px) {
     background-image: url(../images/page-footer/bg-footer-desktop@x1.png);
 
@@ -116,11 +116,8 @@
   color: $main-2-color;
 
   &::before {
-    content: '';
-    width: 60px;
-    height: 1px;
+    @extend %before;
     background-color: $footer-rgba;
-    margin-right: 20px;
   }
 }
 

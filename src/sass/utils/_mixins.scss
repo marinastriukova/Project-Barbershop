@@ -10,11 +10,13 @@
 
 @mixin button($background-color, $color) {
   text-decoration: none;
+  font-family: $main-font;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.3;
   text-align: center;
   letter-spacing: 0.09em;
+  text-transform: uppercase;
   color: $color;
   background-color: $background-color;
 

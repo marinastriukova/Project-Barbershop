@@ -1,36 +1,34 @@
 .barba-title {
-  position: relative;
+  // position: relative;
+  @include flex;
   margin-top: 0;
   margin-bottom: 44px;
-  margin-left: 80px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 21px;
+  // margin-left: 80px;
 
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  @extend %small-text;
+  color: $on-white-title-color;
+  // font-family: Open Sans;
+  // font-style: normal;
+  // font-weight: 600;
+  // font-size: 11px;
+  // line-height: 21px;
 
-  color: #303030;
+  // letter-spacing: 0.1em;
+  // text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
-    line-height: 15px;
-  }
-}
+  // color: #303030;
 
-.barba-title::before {
-  content: ' ';
-  position: absolute;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-  margin-right: 20px;
+  // @media screen and (min-width: 768px) {
+  //   line-height: 15px;
+  // }
 
-  left: -80px;
-  top: 7px;
-  @media screen and (max-width: 767px) {
-    top: 10px;
+  &::before {
+    @extend %before;
+    background-color: $on-white-title-color;
+    margin-bottom: 13px;
+    @media screen and (min-width: 485px) {
+      margin-bottom: 0;
+    }
   }
 }
 
