@@ -1,12 +1,17 @@
 // Стили для блока "Почему приходят именно к нам?"
 .features-container {
+  
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 .features-box{
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
   @media screen and (min-width: 1280px) {
     margin-top: 25px;
     max-width: 50%;
@@ -56,6 +61,9 @@
   letter-spacing: 0.02em;
   color: $on-white-text-color;
   padding-top: 20px;
+  @media screen and (max-width: 471px){
+    padding-bottom: 20px;
+  }
   @media screen and (min-width: 768px) {
     padding-right: 185px;
   }
@@ -67,23 +75,26 @@
   @include centeredflex;
   flex-wrap: wrap;
   margin-top: 0;
+  
   @media screen and (min-width: 768px) {
     justify-content: flex-end;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 0px;
+    padding-left: 35px;
   }
   &-margin-right {
     margin-right: 15px;
     @media screen and (max-width: 471px) {
-      margin-right: 0px;
+      margin-right: 5px;
+      width: 45%;
     }
   }
   &-margin {
     margin-top: 49px;
     margin-left: 15px;
     @media screen and (max-width: 471px) {
-      margin-left: 0px;
+      margin-left: 5px;
+      width: 45%;
     }
   } 
 }
@@ -91,9 +102,17 @@
   background-color: $secondary-bg-color;
   padding: 20px 30px;
   text-align: center;
-  width: 190px;
+  max-width: 190px;
   height: 133px;
   position: relative;
+  @media screen and (min-width: 768px) {
+    width: 210px;
+    padding: 20px 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 170px;
+    padding: 20px;
+  }
   &-number {
     font-family: $main-font;
     font-style: normal;
