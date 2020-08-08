@@ -63,7 +63,7 @@
 }
 
 .prices-button {
-  @include button(transparent, $accent-color);
+  @include button(transparent, $main-2-color);
 }
 
 .prices-services {
