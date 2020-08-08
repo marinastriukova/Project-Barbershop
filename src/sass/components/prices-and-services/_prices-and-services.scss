@@ -31,10 +31,7 @@
   margin-bottom: 20px;
 
   &::before {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 60px;
+    @extend %before;
     background-color: $on-dark-text-color;
     margin-right: 20px;
   }
@@ -76,7 +73,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url(../images/prices-services/prices-services-mobile@2x.png);
-    background-size: contain;
+    background-size: cover;
   }
 
   @media (min-width: 768px) {
