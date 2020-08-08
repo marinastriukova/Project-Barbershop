@@ -1,6 +1,5 @@
 .price-string {
   @include flex;
-
   &:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -26,9 +25,10 @@
 
 .prices-slogan {
   @extend %small-text;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   color: $on-dark-rgba;
+  margin-bottom: 20px;
 
   &::before {
     content: '';
@@ -67,7 +67,6 @@
 }
 
 .prices-services {
-  // min-width: 480px;
   background-color: $background-color;
   background-image: url(../images/prices-services/prices-services-mobile.png);
   background-repeat: no-repeat;
