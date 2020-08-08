@@ -24,16 +24,19 @@
 }
 
 .prices-slogan {
+  @include flex;
   @extend %small-text;
-  display: flex;
-  align-items: center;
+
   color: $on-dark-rgba;
   margin-bottom: 20px;
 
   &::before {
     @extend %before;
     background-color: $on-dark-text-color;
-    margin-right: 20px;
+    margin-bottom: 13px;
+    @media screen and (min-width: 485px) {
+      margin-bottom: 0;
+    }
   }
 }
 

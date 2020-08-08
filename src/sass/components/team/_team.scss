@@ -4,14 +4,17 @@
   color: $on-white-title-color;
 
   &-subtitle {
+    @include flex;
     @extend %small-text;
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
 
     &::before {
       @extend %before;
       background-color: $on-white-title-color;
+      margin-bottom: 13px;
+      @media screen and (min-width: 485px) {
+        margin-bottom: 0;
+      }
     }
   }
 
