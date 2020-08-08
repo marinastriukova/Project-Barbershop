@@ -1,6 +1,5 @@
 // Стили для Блока "О нас"
 .tech-skills-container {
-  /*padding: 84px 31px 84px 31px;*/
   margin: 0px auto 0px auto;
   display: flex;
 
@@ -88,7 +87,6 @@
   transform: rotate(90deg);
 }
 .tech-skills-text1 {
-  width: 418px;
   padding-bottom: 20px;
 
   font-family: $main-font;
@@ -114,7 +112,6 @@
   }
 }
 .tech-skills-text2 {
-  width: 418px;
   padding-bottom: 40px;
 
   font-family: $main-font;
@@ -147,34 +144,13 @@
   }
 }
 .tech-skills-button {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.3;
-  text-align: center;
-  letter-spacing: 0.09em;
-  color: $main-1-color;
-  background-color: $main-2-color;
-
-  display: inline-block;
-  border: 1px solid $accent-color;
-  border-radius: 25px;
-  padding: 12px 38px;
-  min-width: 160px;
-
-  transition: color $animation, border-color $animation,
-    background-color $animation;
-
-  &:hover,
-  &:focus {
-    color: $main-2-color;
-    background-color: $accent-color;
-    border-color: $accent-color;
-  }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: 30px;
   }
   @media screen and (min-width: 1280px) {
     margin-left: 64px;
   }
+  @include button($background-color, $main-1-color);
+  color: $main-1-color;
+  background-color: $secondary-bg-color;
 }
