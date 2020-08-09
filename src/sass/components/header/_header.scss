@@ -231,9 +231,19 @@ margin-right: 40px;
     }
 }
 .border {
-    border: 1px solid #FF6C00;
-    border-radius: 25px;
-    padding: 12px 37px;
+    @media screen and (max-width: 767px) {
+        @include button($main-2-color, $on-white-title-color);
+        padding: 12px 37px;
+    }
+    @media screen and (min-width: 768px) {
+        @include button(transparent, $main-2-color);
+        padding: 12px 20px;
+        // background-color: transparent;
+    }
+    // @include button($background-color, $on-white-title-color);
+    // border: 1px solid #FF6C00;
+    // border-radius: 25px;
+    // padding: 12px 37px;
 }
 
 
