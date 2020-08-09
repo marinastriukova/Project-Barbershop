@@ -110,4 +110,5 @@
 }
 .tech-skills-button {
   @include button($main-2-color, $main-1-color);
+  padding: 12px 20px;
 }

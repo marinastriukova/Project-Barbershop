@@ -59,6 +59,7 @@
 
 .prices-button {
   @include button(transparent, $main-2-color);
+  padding: 12px 20px;
 }
 
 .prices-services {
