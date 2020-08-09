@@ -63,7 +63,7 @@ a {
   text-transform: uppercase;
 }
 
-.footer-time::before, .barba-title::before, .team-subtitle::before, .prices-slogan::before, .tech-skills-text::before {
+.footer-time::before, .barba-title::before, .team-subtitle::before, .prices-slogan::before, .tech-skills-text::before, .social-list::before {
   content: "";
   width: 60px;
   height: 1px;
@@ -145,6 +145,14 @@ a {
 }
 .social-list-aside-item:not(:last-child) {
   margin-right: 40px;
+}
+
+.social-list-aside::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 20px;
 }
 
 .line {
@@ -386,7 +394,6 @@ a {
     display: none;
   }
 }
-
 @media screen and (max-width: 767px) {
   .social-list-item:not(:last-child) {
     margin-bottom: 24px;
@@ -1362,7 +1369,11 @@ form > .appointment-input {
 }
 
 .footer-copyright {
-  color: #555555;
+  color: #9da4bd;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
 }
 @media screen and (max-width: 767px) {
   .footer-copyright {
