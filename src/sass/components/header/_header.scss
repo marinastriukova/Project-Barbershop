@@ -50,7 +50,15 @@
         
     }
 }
-
+.social-list-aside {
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: $on-white-title-color;
+        margin-right: 20px;
+    }
+}
 
 .line {
 width: 60px;
@@ -261,6 +269,9 @@ margin-right: 40px;
     }
     @media screen and (min-width: 768px) {
         display: none;
+    }
+    &::before {
+        @extend %before;
     }
 }
 .social-list-item {
