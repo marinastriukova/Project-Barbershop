@@ -18,11 +18,6 @@
   }
 }
 
-.slogan-container {
-  @include flex;
-  margin-bottom: 20px;
-}
-
 .prices-slogan {
   @include flex;
   @extend %small-text;
