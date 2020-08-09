@@ -6,13 +6,15 @@
     background-position: center;
     background-size: cover;
     height: 580px;
-    display: flex;
+    
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192px),
         screen and (min-resolution: 2dppx) {
         background-image: url(../images/hero/480/hero-480-slider3@2x.jpg);
         }
-    
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         background-image: url(../images/hero/609/hero-609-slider2.jpg);
 

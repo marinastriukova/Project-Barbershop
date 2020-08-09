@@ -20,12 +20,18 @@
 .social-list-aside {
     position: relative;
     top: 85%;
+    a {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.2em;
+        color: $on-white-title-color;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.2em;
-    color: $on-white-title-color;
+        &:hover, &:focus {
+            color: $accent-color;
+        }
+    }
+    
 
     @media screen and(min-width: 768px) {
         display: flex;
@@ -41,10 +47,7 @@
             margin-right: 40px;
         }
 
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
+        
     }
 }
 
@@ -56,14 +59,13 @@ height: 1px;
 margin-right: 40px;
 }
 // header {
-//     position: relative;
-//     font-family: Open Sans;    
+//     // position: relative;
+//     // font-family: Open Sans;    
 // }
 .header-content {
-    display: flex;
+    
     @media screen and (max-width: 767px) {
         padding: 40px 31px;
-        // justify-content: space-between;
     }
 }
 .logo {
@@ -77,7 +79,7 @@ margin-right: 40px;
 .menu-button {
     // display: inline-flex;
     // margin: 0;
-    margin-left: auto;
+    // margin-left: auto;
     // padding: 0;
     border: none;
     background-color: transparent;
@@ -110,7 +112,6 @@ margin-right: 40px;
 .menu-container {
     
     text-align: left;
-    // outline: 1px solid black;
     
     a:hover, a:focus {
         color: $accent-color;
@@ -131,12 +132,20 @@ margin-right: 40px;
         }
 
         a {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.1em;
             color: $on-white-title-color;
         }
     }
     @media screen and (min-width: 768px) {
         display: flex;
         a {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
             color: $main-2-color;
         }
     }
