@@ -19,7 +19,8 @@
 
 .social-list-aside {
     position: relative;
-    top: 85%;
+    top: 60%;
+    // bottom: 40px;
     a {
         font-weight: 600;
         font-size: 11px;
@@ -60,12 +61,11 @@
     }
 }
 
-.line {
-width: 60px;
-height: 1px;
-// background-color: $forth-text-color;
-margin-right: 40px;
-}
+// .line {
+// width: 60px;
+// height: 1px;
+// margin-right: 40px;
+// }
 // header {
 //     // position: relative;
 //     // font-family: Open Sans;    
@@ -73,10 +73,16 @@ margin-right: 40px;
 .header-content {
     
     @media screen and (max-width: 767px) {
-        padding: 40px 31px;
+        // padding: 40px 31px;
+        padding-top: 40px;
+        padding-left: 31px;
+        padding-right: 31px;
     }
 }
 .logo {
+    @media screen and (max-width: 767px) {
+        position: relative;
+    }
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -89,10 +95,13 @@ margin-right: 40px;
     // margin: 0;
     // margin-left: auto;
     // padding: 0;
+    position: absolute;
+    top: 48px;
+    right: 31px;
     border: none;
     background-color: transparent;
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -205,11 +214,14 @@ margin-right: 40px;
         
     }
     @media screen and (min-width: 768px) {
-        margin-left: 47px;
+        position: absolute;
+        right: 39px;
+        // margin-left: 47px;
     }
     @media screen and (min-width: 1280px) {
+        right: 55px;
         padding-top: 40px;
-        margin-left: 322px;
+        // margin-left: 322px;
         display: flex;
         align-items: center;
         // margin-left: auto;

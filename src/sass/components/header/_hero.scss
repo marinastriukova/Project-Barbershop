@@ -37,21 +37,49 @@
 }
 .hero {
     &-container {
-        padding-top: 194px;
+        @media screen and (max-width: 767px) {
+            padding-left: 35px;
+            padding-top: 100px;
+        }
+        @media screen and (min-width: 768px) {
+            padding-left: 120px;
+            padding-top: 156px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-left: 100px;
+            padding-top: 184px;
+        }
     }
     &-description {
-        color: rgba(157, 164, 189, 0.6);
+        @extend %small-text;
+        color: $on-dark-rgba;
+        // font-weight: 600;
+        // font-size: 11px;
+        // line-height: 15px;
+        // letter-spacing: 0.1em;
     }
     &-title {
         font-size: 48px;
         line-height: 56px;
         letter-spacing: 0.05em;
+
         color: $main-2-color;
+
+        @media screen and (min-width: 1280px) {
+            font-size: 72px;
+            line-height: 85px;
+        }
     }
     &-description-text {
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 0.02em;
-        color: #9DA4BD;
+
+        color: $on-dark-text-color;
+
+        @media screen and (min-width: 1280px) {
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
 }
