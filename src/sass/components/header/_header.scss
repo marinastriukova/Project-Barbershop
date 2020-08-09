@@ -29,6 +29,7 @@
         color: $on-white-title-color;
 
         &:hover, &:focus {
+            transition: $animation;
             color: $accent-color;
         }
     }
@@ -128,9 +129,10 @@
 }
 .menu-container {
     
-    text-align: left;
+    // text-align: left;
     
     a:hover, a:focus {
+        transition: $animation;
         color: $accent-color;
     }
     @media screen and  (max-width: 767px) {
@@ -269,7 +271,7 @@
 
 .social-list {
     @media screen and (max-width: 767px) {
-        margin-left: 40px;
+        margin-left: 140px;
         margin-right: 105px;
     }
     &-item {
