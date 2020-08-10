@@ -241,13 +241,14 @@
         a {
             width: 194px;
             
+            @media screen and (max-width: 767px) {
+                color: $on-white-title-color;
+            }
             @media screen and (max-width: 400px) {
                 font-weight: 500;
                 font-size: 13px;
                 line-height: 20px;
-            @media screen and (max-width: 767px) {
-                color: $on-white-title-color;
-            }
+            
             @media screen and (min-width: 768px) {
                 font-weight: 600;
                 font-size: 18px;
