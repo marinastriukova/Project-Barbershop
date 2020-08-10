@@ -38,11 +38,15 @@
 }
 .features-title-second {
   font-family: $title-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
+  @extend %title-name;
+  
+  text-align: left;
+  // font-style: normal;
+  // font-weight: bold;
+  // font-size: 42px;
+  // line-height: 49px;
+  // letter-spacing: 0.05em;
+
   color: $on-white-title-color;
   padding-top: 20px;
   @media screen and (min-width: 768px) {
