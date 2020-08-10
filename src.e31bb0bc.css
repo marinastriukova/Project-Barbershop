@@ -551,6 +551,7 @@ a {
   border-bottom: 1px solid rgba(157, 164, 189, 0.6);
 }
 .slider-nav-item:hover, .slider-nav-item:focus {
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
