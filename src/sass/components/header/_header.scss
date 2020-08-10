@@ -166,8 +166,18 @@
         }
     }
 }
-
+.social-list-aside::before {
+    @extend %before;
+    position: absolute;
+    right: 40px;
+    bottom: 8px;
+    background: $on-white-title-color;
+}
 .navigation-list {
+    // &::before {
+    //     @extend %before;
+    //     background: $accent-color;
+    // }
     a:hover, a:focus {
         transition: $animation;
         color: $accent-color;
@@ -284,6 +294,7 @@
 }
 
 .social-list {
+    position: relative;
     @media screen and (max-width: 767px) {
         margin-left: 140px;
         margin-right: 105px;
@@ -300,6 +311,12 @@
     }
     &::before {
         @extend %before;
+            @extend %before;
+            position: absolute;
+            top: 12px;
+            left: -100px;
+            background: $on-white-title-color;
+        
     }
 }
 .social-list-item {
@@ -316,24 +333,3 @@
     background-color: $on-white-title-color;
     margin-right: 40px;
 }
-
-// .aside {
-//     @media screen and (min-width: 768px) {
-//         position: absolute;
-//         top: 100%;
-//         left: 0;
-//         transform: rotate(270deg);
-//     }
-//     .social-item {
-//         &:not(:last-child) {
-//             @media screen and (max-width: 767px) {
-//                 margin-bottom: 24px;
-//             }
-//         }
-//         &:not(:last-child) {
-//             @media screen and (min-width: 768px) {
-//                 margin-right: 40px;
-//             }
-//         }
-//     }
-// }

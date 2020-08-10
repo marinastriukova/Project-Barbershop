@@ -51,11 +51,14 @@
   color: $on-white-title-color;
 }
 
+// .tech-skills-text::before {
+//   @extend %before;
+//   background: $on-white-title-color;
+// }
 .tech-skills-text::before {
   @extend %before;
   background: $on-white-title-color;
 }
-
 .tech-skills-text1 {
   padding-bottom: 20px;
 

@@ -51,6 +51,15 @@
         }
     }
     &-description {
+        position: relative;
+        &::before {
+            @extend %before;
+            position: absolute;
+            left: -75px;
+            top: 8px;
+            background: $on-dark-rgba;
+        }
+        margin-left: 80px;
         @extend %small-text;
         color: $on-dark-rgba;
     }
@@ -79,7 +88,20 @@
         }
     }
 }
-
+// .hero-title::before {
+//     @extend %before;
+//     background: $on-white-title-color;
+//     z-index: 100;
+// }
+// .hero-description::before {
+//         @extend %before;
+//         background: $on-white-title-color;
+//     }
+// .hero-description::before {
+//     @extend %before;
+//     position: absolute;
+//     background: $on-dark-rgba;
+// }
 .slider {
     position: absolute;
     right: 39px;
@@ -94,6 +116,7 @@
             border-bottom: 1px solid $on-dark-rgba;
         }
         &-item:hover, &-item:focus {
+            transition: $animation;
             color: $main-2-color;
             border-bottom: 1px solid $main-2-color;
         }
