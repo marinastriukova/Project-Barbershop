@@ -84,8 +84,13 @@
 }
 
 .price-list1 {
-  padding: 30px 30px 10px;
-
+  
+  @media (max-width: 479px) {
+    padding: 30px 10px 10px;
+  }
+  @media (min-width: 480px) {
+    padding: 30px 30px 10px;
+  }
   @media (min-width: 1280px) {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
     width: 50%;
@@ -95,8 +100,12 @@
 
 .price-list2 {
   margin-bottom: 50px;
-  padding: 10px 30px 30px;
-
+  @media (max-width: 400px) {
+    padding: 10px 10px 30px;
+  }
+  @media (min-width: 401px) {
+    padding: 10px 30px 30px;
+  }
   @media (min-width: 1280px) {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
     width: 50%;
