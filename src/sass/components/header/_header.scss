@@ -129,8 +129,14 @@
 .menu-container {
     
     // text-align: left;
-    
-    
+    min-width: 270px;
+    width: 65vw;
+    // @media screen and (max-width: 400px) {
+    //     width: 290px;
+    // }
+    // @media screen and (min-width: 401px) and (max-width:767px) {
+    //     width: 337px;
+    // }
     @media screen and  (max-width: 767px) {
         background-color: #ffffff;
         position: absolute;
@@ -146,13 +152,18 @@
             display: block;
         }
 
-        a {
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 25px;
-            letter-spacing: 0.1em;
-            color: $on-white-title-color;
-        }
+        // a {
+        //     @media screen and (max-width: 400px) {
+        //         font-weight: 500;
+        //         font-size: 13px;
+        //         line-height: 20px;
+        //     }
+        //     font-weight: 600;
+        //     font-size: 18px;
+        //     line-height: 25px;
+        //     letter-spacing: 0.1em;
+        //     color: $on-white-title-color;
+        // }
     }
     @media screen and (min-width: 768px) {
         display: flex;
@@ -177,6 +188,21 @@
     //     @extend %before;
     //     background: $accent-color;
     // }
+    a {
+            @media screen and (max-width: 400px) {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 20px;
+            }
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.1em;
+            color: $on-white-title-color;
+            @media screen and (min-width: 768px) {
+                color: $main-2-color;
+            }
+        }
     a:hover, a:focus {
         transition: $animation;
         color: $accent-color;
@@ -212,6 +238,27 @@
 
 .contacts {
     .phone-header {
+        a {
+            width: 194px;
+            
+            @media screen and (max-width: 400px) {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 20px;
+            @media screen and (max-width: 767px) {
+                color: $on-white-title-color;
+            }
+            @media screen and (min-width: 768px) {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 0.1em;
+                
+                color: $main-2-color;
+            }
+            }
+            
+        }
         a:hover, a:focus {
             transition: $animation;
             color: $accent-color;
@@ -219,7 +266,7 @@
     }
     @media screen and (max-width: 767px) {
         margin-left: 40px;
-        margin-right: 103px;
+        // margin-right: 103px;
         margin-bottom: 64px;
     }
     @media screen and (min-width: 768px) and (max-width: 1279px)  {
@@ -294,6 +341,18 @@
 
 .social-list {
     position: relative;
+    a {
+        @media screen and (max-width: 400px) {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 20px;
+        }
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        color: $on-white-title-color;
+    }
     @media screen and (max-width: 767px) {
         margin-left: 140px;
         margin-right: 105px;
