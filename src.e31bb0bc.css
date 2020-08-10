@@ -60,9 +60,9 @@ a {
 }
 @media screen and (max-width: 400px) {
   .hero-title {
-    font-size: 36px;
-    line-height: 56px;
-    letter-spacing: 0.05em;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
   }
 }
 @media screen and (min-width: 401px) {
@@ -85,11 +85,36 @@ a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+@media screen and (max-width: 400px) {
+  .footer-copyright, .footer-time, .appointment-input-label, .barba-title, .team-subtitle, .prices-slogan, .tech-skills-text, .hero-description, .social-list-aside a {
+    font-weight: 550;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+  }
+}
+@media screen and (min-width: 401px) {
+  .footer-copyright, .footer-time, .appointment-input-label, .barba-title, .team-subtitle, .prices-slogan, .tech-skills-text, .hero-description, .social-list-aside a {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+  }
+}
 
-.tech-skills-text1, .hero-description-text {
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
+@media screen and (max-width: 400px) {
+  .tech-skills-text1, .hero-description-text {
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+  }
+}
+@media screen and (min-width: 401px) {
+  .tech-skills-text1, .hero-description-text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+  }
 }
 @media screen and (min-width: 1280px) {
   .tech-skills-text1, .hero-description-text {
@@ -128,12 +153,11 @@ a {
 }
 
 .container {
-  padding: 84px 31px 84px 31px;
   margin: 0px auto 0px auto;
 }
 @media screen and (max-width: 400px) {
   .container {
-    padding: 84px 10px 84px 10px;
+    padding: 84px 2px 84px 2px;
   }
 }
 @media screen and (min-width: 401px) {
@@ -265,6 +289,10 @@ a {
   fill: #ffffff;
 }
 
+.menu-container {
+  min-width: 270px;
+  width: 65vw;
+}
 @media screen and (max-width: 767px) {
   .menu-container {
     background-color: #ffffff;
@@ -278,13 +306,6 @@ a {
   }
   .menu-container.is-open {
     display: block;
-  }
-  .menu-container a {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.1em;
-    color: #303030;
   }
 }
 @media screen and (min-width: 768px) {
@@ -307,6 +328,25 @@ a {
   background: #303030;
 }
 
+.navigation-list a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+@media screen and (max-width: 400px) {
+  .navigation-list a {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navigation-list a {
+    color: #ffffff;
+  }
+}
 .navigation-list a:hover, .navigation-list a:focus {
   transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ff6c00;
@@ -344,6 +384,30 @@ a {
   }
 }
 
+.contacts .phone-header a {
+  width: 194px;
+}
+@media screen and (max-width: 400px) {
+  .contacts .phone-header a {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 400px) and (max-width: 767px) {
+  .contacts .phone-header a {
+    color: #303030;
+  }
+}
+@media screen and (max-width: 400px) and (min-width: 768px) {
+  .contacts .phone-header a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+}
 .contacts .phone-header a:hover, .contacts .phone-header a:focus {
   transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ff6c00;
@@ -351,7 +415,6 @@ a {
 @media screen and (max-width: 767px) {
   .contacts {
     margin-left: 40px;
-    margin-right: 103px;
     margin-bottom: 64px;
   }
 }
@@ -484,6 +547,20 @@ a {
 
 .social-list {
   position: relative;
+}
+.social-list a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  color: #303030;
+}
+@media screen and (max-width: 400px) {
+  .social-list a {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .social-list {
@@ -627,6 +704,39 @@ a {
 }
 .slider-nav-item:not(:last-child) {
   margin-right: 24px;
+}
+
+.slider-item-1::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 430px;
+  width: 8px;
+  height: 2px;
+  margin-right: 20px;
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.slider-item-2::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 440px;
+  width: 8px;
+  height: 2px;
+  margin-right: 20px;
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.slider-item-3::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 450px;
+  width: 18px;
+  height: 2px;
+  margin-right: 20px;
+  background: rgba(157, 164, 189, 0.6);
 }
 
 .backdrop {
