@@ -387,16 +387,16 @@ a {
 .contacts .phone-header a {
   width: 194px;
 }
+@media screen and (max-width: 767px) {
+  .contacts .phone-header a {
+    color: #303030;
+  }
+}
 @media screen and (max-width: 400px) {
   .contacts .phone-header a {
     font-weight: 500;
     font-size: 13px;
     line-height: 20px;
-  }
-}
-@media screen and (max-width: 400px) and (max-width: 767px) {
-  .contacts .phone-header a {
-    color: #303030;
   }
 }
 @media screen and (max-width: 400px) and (min-width: 768px) {
