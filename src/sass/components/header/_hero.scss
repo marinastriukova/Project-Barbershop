@@ -10,13 +10,13 @@
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192px),
         screen and (min-resolution: 2dppx) {
-        background-image: url(../images/hero/480/hero-480-slider3@2x.jpg);
+            background-image: url(../images/hero/480/hero-480-slider3@2x.jpg);
         }
         @media screen and (min-width: 768px) {
             display: flex;
         }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        background-image: url(../images/hero/609/hero-609-slider3.jpg);
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            background-image: url(../images/hero/609/hero-609-slider3.jpg);
 
             @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192px),
@@ -64,49 +64,33 @@
         color: $on-dark-rgba;
     }
     &-title {
-        font-size: 48px;
-        line-height: 56px;
-        letter-spacing: 0.05em;
-
+        @extend %title-hero;
         color: $main-2-color;
-
-        @media screen and (min-width: 1280px) {
-            font-size: 72px;
-            line-height: 85px;
-        }
     }
+
     &-description-text {
         @extend %description;
-
         color: $on-dark-text-color;
-
-        @media screen and (min-width: 1280px) {
-            font-size: 18px;
-            line-height: 30px;
-        }
+        position: relative;
     }
 }
-// .hero-title::before {
-//     @extend %before;
-//     background: $on-white-title-color;
-//     z-index: 100;
-// }
-// .hero-description::before {
-//         @extend %before;
-//         background: $on-white-title-color;
-//     }
-// .hero-description::before {
-//     @extend %before;
-//     position: absolute;
-//     background: $on-dark-rgba;
-// }
+
 .slider {
-    position: absolute;
-    right: 39px;
+    // position: absolute;
+    // right: 39px;
     @media screen and (max-width: 767px) {
         display: none;
     }
     &-nav {
+        display: flex;
+        position: absolute;
+
+        padding-top: 170px;
+        right: 39px;
+        @media screen and (min-width: 1280px) {
+            padding-top: 100px;
+            right: 55px;
+        }
         &-item {
             padding-bottom: 8px;
             cursor: pointer;
@@ -121,8 +105,6 @@
         &-item:not(:last-child) {
             margin-right: 24px;
         }
-        display: flex;
-        // justify-content: space-between;
     }
 }
 .backdrop {
