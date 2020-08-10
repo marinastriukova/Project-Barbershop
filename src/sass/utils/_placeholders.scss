@@ -9,9 +9,16 @@
 
 %title-hero {
   font-family: Raleway;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: 0.05em;
+  
+  @media screen and (max-width: 400px) {
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: 0.05em;
+  }
+  @media screen and (min-width: 401px) {
+    font-size: 48px;
+    letter-spacing: 0.05em;
+  }
   @media screen and (min-width: 1280px) {
     font-size: 72px;
     line-height: 85px;
