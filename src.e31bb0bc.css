@@ -63,7 +63,7 @@ a {
   text-transform: uppercase;
 }
 
-.footer-time::before, .barba-title::before, .team-subtitle::before, .prices-slogan::before, .tech-skills-text::before, .social-list::before {
+.footer-time::before, .barba-title::before, .team-subtitle::before, .prices-slogan::before, .tech-skills-text::before, .hero-description::before, .social-list::before, .social-list-aside::before {
   content: "";
   width: 60px;
   height: 1px;
@@ -243,6 +243,13 @@ a {
   }
 }
 
+.social-list-aside::before {
+  position: absolute;
+  right: 40px;
+  bottom: 8px;
+  background: #303030;
+}
+
 .navigation-list a:hover, .navigation-list a:focus {
   transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ff6c00;
@@ -418,6 +425,9 @@ a {
   border-color: #ff6c00;
 }
 
+.social-list {
+  position: relative;
+}
 @media screen and (max-width: 767px) {
   .social-list {
     margin-left: 140px;
@@ -434,6 +444,13 @@ a {
     display: none;
   }
 }
+.social-list::before {
+  position: absolute;
+  top: 12px;
+  left: -100px;
+  background: #303030;
+}
+
 @media screen and (max-width: 767px) {
   .social-list-item:not(:last-child) {
     margin-bottom: 24px;
@@ -505,7 +522,15 @@ a {
   }
 }
 .hero-description {
+  position: relative;
+  margin-left: 80px;
   color: rgba(157, 164, 189, 0.6);
+}
+.hero-description::before {
+  position: absolute;
+  left: -75px;
+  top: 8px;
+  background: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
   font-size: 48px;
