@@ -43,18 +43,10 @@
 }
 
 .price-item {
+  @extend %description-price;
   min-width: max-content;
   font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
   color: $on-dark-text-color;
-
-  @media (min-width: 768px) {
-    font-size: 18px;
-  }
 }
 
 .prices-button {
@@ -92,35 +84,23 @@
 }
 
 .price-list1 {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding: 30px 30px 10px;
 
   @media (min-width: 1280px) {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
     width: 50%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 40px 30px 40px;
   }
 }
 
 .price-list2 {
   margin-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-top: 10px;
+  padding: 10px 30px 30px;
 
   @media (min-width: 1280px) {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
     width: 50%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 40px;
     margin: 0;
   }
 }

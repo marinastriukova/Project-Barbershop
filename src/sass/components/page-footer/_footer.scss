@@ -163,9 +163,7 @@
 .footer-copyright {
   color: $on-dark-text-color;
 
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
+  @extend %small-text;
   letter-spacing: 0.2em;
   
   @media screen and (max-width: 767px) {
