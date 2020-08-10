@@ -46,19 +46,19 @@ a {
   text-decoration: none;
 }
 
-.footer-title, .appointment-title, .team-title, .prices-title {
+.footer-title, .appointment-title, .team-title, .features-title-second, .prices-title {
   font-family: Raleway;
   font-weight: bold;
   font-size: 42px;
-  line-height: 1.17;
-  text-align: center;
+  line-height: 49px;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .footer-time, .appointment-input-label, .barba-title, .team-subtitle, .prices-slogan, .tech-skills-text, .hero-description {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.37;
+  line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -934,11 +934,7 @@ a {
 
 .features-title-second {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
+  text-align: left;
   color: #303030;
   padding-top: 20px;
 }
@@ -1467,7 +1463,7 @@ form > .appointment-input {
 }
 
 .footer-social {
-  color: black;
+  color: #303030;
 }
 .footer-social:not(:last-child) {
   margin-right: 40px;
