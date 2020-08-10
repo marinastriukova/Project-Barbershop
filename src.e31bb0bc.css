@@ -55,12 +55,48 @@ a {
   text-align: center;
 }
 
-.footer-time, .appointment-input-label, .barba-title, .team-subtitle, .prices-slogan, .tech-skills-text, .hero-description {
+.hero-title {
+  font-family: Raleway;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 72px;
+    line-height: 85px;
+  }
+}
+
+.footer-copyright, .footer-time, .appointment-input-label, .barba-title, .team-subtitle, .prices-slogan, .tech-skills-text, .hero-description, .social-list-aside a {
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.tech-skills-text1, .hero-description-text {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 1280px) {
+  .tech-skills-text1, .hero-description-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.price-item {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+@media screen and (min-width: 768px) {
+  .price-item {
+    font-size: 18px;
+  }
 }
 
 .footer-time::before, .barba-title::before, .team-subtitle::before, .prices-slogan::before, .tech-skills-text::before, .hero-description::before, .social-list::before, .social-list-aside::before {
@@ -126,9 +162,6 @@ a {
   top: 60%;
 }
 .social-list-aside a {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
   letter-spacing: 0.2em;
   color: #303030;
 }
@@ -187,6 +220,10 @@ a {
   background-color: transparent;
   cursor: pointer;
   z-index: 5;
+}
+.menu-button:hover, .menu-button:focus {
+  fill: #ff6c00;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -533,34 +570,13 @@ a {
   background: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: 0.05em;
   color: #ffffff;
 }
-@media screen and (min-width: 1280px) {
-  .hero-title {
-    font-size: 72px;
-    line-height: 85px;
-  }
-}
 .hero-description-text {
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
   color: #9da4bd;
-}
-@media screen and (min-width: 1280px) {
-  .hero-description-text {
-    font-size: 18px;
-    line-height: 30px;
-  }
+  position: relative;
 }
 
-.slider {
-  position: absolute;
-  right: 39px;
-}
 @media screen and (max-width: 767px) {
   .slider {
     display: none;
@@ -568,6 +584,15 @@ a {
 }
 .slider-nav {
   display: flex;
+  position: absolute;
+  padding-top: 170px;
+  right: 39px;
+}
+@media screen and (min-width: 1280px) {
+  .slider-nav {
+    padding-top: 100px;
+    right: 55px;
+  }
 }
 .slider-nav-item {
   padding-bottom: 8px;
@@ -633,10 +658,9 @@ a {
 }
 
 .tech-skills-title {
-  width: 330px;
+  max-width: 330px;
   padding-bottom: 20px;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
   font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.05em;
@@ -644,7 +668,7 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .tech-skills-title {
-    width: 500px;
+    max-width: 500px;
     font-size: 42px;
     line-height: 1.17;
   }
@@ -664,26 +688,11 @@ a {
 .tech-skills-text1 {
   padding-bottom: 20px;
   font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
   color: #555555;
-}
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .tech-skills-text1 {
-    width: 330px;
-    font-size: 16px;
-    line-height: 1.6;
-  }
 }
 @media screen and (min-width: 1280px) {
   .tech-skills-text1 {
-    width: 500px;
-    font-size: 18px;
-    line-height: 1.7;
-    min-height: 60px;
+    max-width: 500px;
   }
 }
 
@@ -699,12 +708,12 @@ a {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .tech-skills-text2 {
-    width: 330px;
+    max-width: 330px;
   }
 }
 @media screen and (min-width: 1280px) {
   .tech-skills-text2 {
-    width: 500px;
+    max-width: 500px;
     min-height: 128px;
   }
 }
@@ -793,17 +802,7 @@ a {
 .price-item {
   min-width: max-content;
   font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
   color: #9da4bd;
-}
-@media (min-width: 768px) {
-  .price-item {
-    font-size: 18px;
-  }
 }
 
 .prices-button {
@@ -868,37 +867,25 @@ a {
 }
 
 .price-list1 {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding: 30px 30px 10px;
 }
 @media (min-width: 1280px) {
   .price-list1 {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
     width: 50%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 40px 30px 40px;
   }
 }
 
 .price-list2 {
   margin-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-top: 10px;
+  padding: 10px 30px 30px;
 }
 @media (min-width: 1280px) {
   .price-list2 {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
     width: 50%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 40px;
     margin: 0;
   }
 }
@@ -1502,9 +1489,6 @@ form > .appointment-input {
 
 .footer-copyright {
   color: #9da4bd;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
   letter-spacing: 0.2em;
 }
 @media screen and (max-width: 767px) {
