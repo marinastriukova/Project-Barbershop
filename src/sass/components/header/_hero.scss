@@ -16,22 +16,22 @@
             display: flex;
         }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-        background-image: url(../images/hero/609/hero-609-slider2.jpg);
+        background-image: url(../images/hero/609/hero-609-slider3.jpg);
 
             @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192px),
                 screen and (min-resolution: 2dppx) {
-                background-image: url(../images/hero/609/hero-609-slider2@2x.jpg);
+                background-image: url(../images/hero/609/hero-609-slider3@2x.jpg);
             }
     }
     
     @media screen and (min-width: 1280px) {
-        background-image: url(../images/hero/1125/hero-1125-slider1.jpg);
+        background-image: url(../images/hero/1125/hero-1125-slider3.jpg);
 
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192px),
             screen and (min-resolution: 2dppx) {
-            background-image: url(../images/hero/1125/hero-1125-slider1@2x.jpg);
+            background-image: url(../images/hero/1125/hero-1125-slider3@2x.jpg);
             }
     }
 }
@@ -91,7 +91,21 @@
         display: none;
     }
     &-nav {
+        &-item {
+            padding-bottom: 8px;
+            cursor: pointer;
+            color: $on-dark-rgba;
+            border-bottom: 1px solid $on-dark-rgba;
+        }
+        &-item:hover, &-item:focus {
+            color: $main-2-color;
+            border-bottom: 1px solid $main-2-color;
+        }
+        &-item:not(:last-child) {
+            margin-right: 24px;
+        }
         display: flex;
+        // justify-content: space-between;
     }
 }
 .backdrop {
@@ -111,3 +125,105 @@
         pointer-events: none;
     }
 }
+
+
+// .slider-item-1 {
+//     // width: 100%;
+//     background-image: url(../images/hero/480/hero-480-slider1.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     height: 580px;
+    
+//         @media screen and (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192px),
+//         screen and (min-resolution: 2dppx) {
+//         background-image: url(../images/hero/480/hero-480-slider1@2x.jpg);
+//         }
+//         @media screen and (min-width: 768px) {
+//             display: flex;
+//         }
+//     @media screen and (min-width: 768px) and (max-width: 1279px) {
+//         background-image: url(../images/hero/609/hero-609-slider1.jpg);
+//             @media screen and (min-device-pixel-ratio: 2),
+//                 screen and (min-resolution: 192px),
+//                 screen and (min-resolution: 2dppx) {
+//                 background-image: url(../images/hero/609/hero-609-slider1@2x.jpg);
+//             }
+//     }    
+//     @media screen and (min-width: 1280px) {
+//         background-image: url(../images/hero/1125/hero-1125-slider1.jpg);
+//             @media screen and (min-device-pixel-ratio: 2),
+//             screen and (min-resolution: 192px),
+//             screen and (min-resolution: 2dppx) {
+//             background-image: url(../images/hero/1125/hero-1125-slider1@2x.jpg);
+//             }
+//     }
+// }
+// .slider-item-2 {
+//     // width: 100%;
+//     background-image: url(../images/hero/480/hero-480-slider2.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     height: 580px;
+    
+//         @media screen and (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192px),
+//         screen and (min-resolution: 2dppx) {
+//         background-image: url(../images/hero/480/hero-480-slider2@2x.jpg);
+//         }
+//         @media screen and (min-width: 768px) {
+//             display: flex;
+//         }
+//     @media screen and (min-width: 768px) and (max-width: 1279px) {
+//         background-image: url(../images/hero/609/hero-609-slider2.jpg);
+//             @media screen and (min-device-pixel-ratio: 2),
+//                 screen and (min-resolution: 192px),
+//                 screen and (min-resolution: 2dppx) {
+//                 background-image: url(../images/hero/609/hero-609-slider2@2x.jpg);
+//             }
+//     }    
+//     @media screen and (min-width: 1280px) {
+//         background-image: url(../images/hero/1125/hero-1125-slider2.jpg);
+//             @media screen and (min-device-pixel-ratio: 2),
+//             screen and (min-resolution: 192px),
+//             screen and (min-resolution: 2dppx) {
+//             background-image: url(../images/hero/1125/hero-1125-slider2@2x.jpg);
+//             }
+//     }
+// }
+
+// .slider-item-3 {
+//     // width: 100%;
+//     background-image: url(../images/hero/480/hero-480-slider3.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     height: 580px;
+    
+//         @media screen and (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192px),
+//         screen and (min-resolution: 2dppx) {
+//         background-image: url(../images/hero/480/hero-480-slider3@2x.jpg);
+//         }
+//         @media screen and (min-width: 768px) {
+//             display: flex;
+//         }
+//     @media screen and (min-width: 768px) and (max-width: 1279px) {
+//         background-image: url(../images/hero/609/hero-609-slider3.jpg);
+//             @media screen and (min-device-pixel-ratio: 2),
+//                 screen and (min-resolution: 192px),
+//                 screen and (min-resolution: 2dppx) {
+//                 background-image: url(../images/hero/609/hero-609-slider3@2x.jpg);
+//             }
+//     }    
+//     @media screen and (min-width: 1280px) {
+//         background-image: url(../images/hero/1125/hero-1125-slider3.jpg);
+//             @media screen and (min-device-pixel-ratio: 2),
+//             screen and (min-resolution: 192px),
+//             screen and (min-resolution: 2dppx) {
+//             background-image: url(../images/hero/1125/hero-1125-slider3@2x.jpg);
+//             }
+//     }
+// }
