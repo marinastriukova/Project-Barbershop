@@ -22,9 +22,7 @@
     top: 60%;
     // bottom: 40px;
     a {
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 15px;
+        @extend %small-text;
         letter-spacing: 0.2em;
         color: $on-white-title-color;
 
@@ -92,10 +90,6 @@
     fill: $main-2-color
 }
 .menu-button {
-    // display: inline-flex;
-    // margin: 0;
-    // margin-left: auto;
-    // padding: 0;
     position: absolute;
     top: 48px;
     right: 31px;
@@ -104,6 +98,10 @@
     cursor: pointer;
     z-index: 5;
 
+    &:hover, &:focus {
+        fill: $accent-color;
+        transition: $animation;
+    }
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -123,6 +121,7 @@
             display: none;
         }
     }
+    
 }
 .icon-menu {
     fill: $main-2-color;

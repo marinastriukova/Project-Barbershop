@@ -26,11 +26,11 @@
 }
 
 .tech-skills-title {
-  width: 330px;
+  max-width: 330px;
 
   padding-bottom: 20px;
   font-family: $title-font;
-  font-weight: bold;
+  // font-weight: bold;
   font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.05em;
@@ -38,7 +38,7 @@
   color: $on-white-title-color;
 
   @media screen and (min-width: 1280px) {
-    width: 500px;
+    max-width: 500px;
     font-size: 42px;
     line-height: 1.17;
   }
@@ -60,26 +60,15 @@
   background: $on-white-title-color;
 }
 .tech-skills-text1 {
+  @extend %description;
   padding-bottom: 20px;
-
   font-family: $main-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.02em;
   color: $on-white-text-color;
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 330px;
-
-    font-size: 16px;
-    line-height: 1.6;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1279px) {
+  //   // width: 330px;
+  // }
   @media screen and (min-width: 1280px) {
-    width: 500px;
-    font-size: 18px;
-    line-height: 1.7;
-    min-height: 60px;
+    max-width: 500px;
   }
 }
 .tech-skills-text2 {
@@ -94,10 +83,10 @@
 
   color: $on-white-text-color;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 330px;
+    max-width: 330px;
   }
   @media screen and (min-width: 1280px) {
-    width: 500px;
+    max-width: 500px;
     min-height: 128px;
   }
 }
