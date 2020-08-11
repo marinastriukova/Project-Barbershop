@@ -1,13 +1,13 @@
 {
-  "name": "parcel-project-template",
+  "name": "project-barbershop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Sergijua06.github.io/parcel-project-template",
+  "homepage": "https://github.com/marinastriukova/Project-Barbershop",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/parcel-project-template/",
+    "predeploy": "npm run build -- --public-url=/project-barbershop/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
