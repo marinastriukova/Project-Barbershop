@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sergijua06/parcel-project-template"
+    "url": "git+https://github.com/marinastriukova/Project-Barbershop"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Project8-andriyd/parcel-project-template"
+    "url": "https://github.com/Sergijua06/Project-Barbershop"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
